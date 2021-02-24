@@ -1,0 +1,92 @@
+.sidebar {
+	--BGColor: #3f0e40;
+	--hoverColor: #350d36;
+	--fontColor: rgb(214, 214, 214);
+
+	background-color: var(--BGColor);
+	transition: 0.5s;
+}
+/* ! Dark mode styles */
+.sidebarDark {
+	--darkModeBGColor: #242526;
+	--darkModeHoverColor: rgb(73, 73, 73);
+
+	background-color: var(--darkModeBGColor) !important;
+}
+
+.sidebar__workspace {
+	color: var(--fontColor);
+	height: 64px;
+	display: flex;
+	align-items: center;
+	padding-left: 19px;
+	justify-content: space-between;
+	border-bottom: 1px solid #532753;
+}
+.sidebarDark__workspace {
+	border-bottom: 1px solid rgb(145, 145, 145) !important;
+}
+
+.sidebar__workspaceNewMsg {
+	width: 36px;
+	height: 36px;
+	background-color: white;
+	color: var(--BGColor);
+	fill: #2c252c;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.sidebarDark__workspaceNewMsg {
+	color: var(--darkModeBGColor) !important;
+}
+
+.sidebar__channels {
+	padding-top: 20px;
+}
+
+.sidebar__channel {
+	color: var(--fontColor);
+	display: grid;
+	grid-template-columns: 15% auto;
+	height: 30px;
+	align-items: center;
+	padding-left: 19px;
+	cursor: pointer;
+}
+.sidebar__channel:hover {
+	background-color: var(--hoverColor);
+}
+/* ! Dark mode styles */
+.sidebarDark__channel:hover {
+	background-color: var(--darkModeHoverColor) !important;
+}
+
+.sidebar__bottomChannels {
+	margin-top: 10px;
+	color: var(--fontColor);
+}
+.sidebar__newBottomChannel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 30px;
+	padding-left: 19px;
+	padding-right: 12px;
+}
+.sidebar__bottomChannel {
+	height: 28px;
+	display: flex;
+	align-items: center;
+	padding-left: 19px;
+	cursor: pointer;
+}
+.sidebar__bottomChannel:hover {
+	background-color: var(--hoverColor);
+}
+/* ! Dark mode styles */
+.sidebarDark__bottomChannel:hover {
+	background-color: var(--darkModeHoverColor) !important;
+}

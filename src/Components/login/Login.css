@@ -1,0 +1,7 @@
+.login {
+	transition: 0.5s;
+}
+.loginDark {
+	color: rgb(214, 214, 214);
+	background-color: #18191a !important;
+}

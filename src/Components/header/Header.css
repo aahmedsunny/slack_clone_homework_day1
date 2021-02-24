@@ -1,0 +1,102 @@
+.header {
+	--fontColor: rgb(214, 214, 214);
+	background-color: #350d36;
+	color: var(--fontColor);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	box-shadow: 0 2px 0 0 #b570be;
+	transition: 0.5s;
+	/* z-index: 1; */
+}
+/* ! Dark mode styles */
+.headerDark {
+	background-color: #242526 !important;
+	box-shadow: 0 2px 0 0 rgb(100, 100, 100) !important;
+}
+.header__SearchContainer {
+	margin: 0 16px;
+	display: flex;
+	align-items: center;
+}
+.header__search {
+	/* box-shadow: inset 0 0 0 1px rgb(104, 74, 104); */
+	min-width: 400px;
+	margin: 0px 10px;
+	height: 30px;
+	border-radius: 15px;
+	width: 100%;
+	background-color: #6c3a6d;
+}
+/* ! Dark mode styles */
+.headerDark__search {
+	/* box-shadow: inset 0 0 0 1px rgb(170, 170, 170) !important; */
+	background-color: #3a3b3c;
+}
+.header__search > input {
+	background-color: transparent;
+	border: none;
+	width: 93%;
+	padding: 6px 13px;
+	color: #e4e6eb;
+	font-size: 0.9375rem;
+}
+.header__search > input:focus {
+	outline: none;
+}
+.header__userContainer {
+	position: absolute;
+	left: 0;
+	align-items: center;
+	display: flex;
+	padding-left: 16px;
+}
+.header__userName {
+	padding-right: 16px;
+}
+.header__userImg {
+	height: 28px;
+	object-fit: contain;
+	border: 2px solid var(--fontColor);
+	border-radius: 6px;
+}
+
+/* ! Toggle Modes Button */
+.header__toggle {
+	position: absolute;
+	right: 0;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+input[type="checkbox"] {
+	position: relative;
+	height: 27px;
+	width: 54px;
+	appearance: none;
+	background-color: #854f86;
+	outline: none;
+	border-radius: 14px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: 1s;
+}
+input:checked[type="checkbox"] {
+	background-color: #5f5f5f;
+}
+input[type="checkbox"]::before {
+	content: "";
+	position: absolute;
+	height: 27px;
+	width: 27px;
+	background-color: white;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+input:checked[type="checkbox"]::before {
+	left: 27px;
+}
